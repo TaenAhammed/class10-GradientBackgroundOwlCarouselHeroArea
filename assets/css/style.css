@@ -1,0 +1,157 @@
+/* Base CSS */
+a:focus, input:focus, textarea:focus, button:focus {
+  outline: 0 solid;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 15px;
+  font-weight: 700;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.sectionPadding {
+  padding: 80px 0;
+}
+
+/* Custom Css */
+.sliderBg1{
+  background: url('../img/banner1.jpg')
+}
+.sliderBg2{
+  background: url('../img/banner2.jpg')
+}
+.sliderBg3{
+  background: url('../img/banner3.jpg')
+}
+.welcomeArea{
+  position: relative;
+  z-index: 1;
+  padding-bottom: 80px;
+}
+.welcomeArea:after{
+  background: #005997;
+  background: -moz-linear-gradient(left, #005997 0%, #0096be 100%);
+  background: -webkit-linear-gradient(left, #005997 0%,#0096be 100%);
+  background: linear-gradient(to right, #005997 0%,#0096be 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005997', endColorstr='#0096be',GradientType=1 );
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 65%;
+  content: '';
+  z-index: -1;
+}
+.headerArea{
+  padding: 20px;
+}
+.logo{
+  padding-top: 8px;
+}
+.logo a{
+  color: #F3F9FB;
+  font-size: 25px;
+}
+.mainMenu ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.mainMenu ul li a{
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+  font-size: 12px;
+  float: left;
+  padding: 20px;
+}
+.contact{
+  font-size: 14px;
+  border-right: 1px solid #E2E2E2;
+  padding-right: 15px;
+}
+.socialLinks{
+  padding-left: 15px;
+  margin-right: 30px;
+}
+.socialLinks a{
+  color: #000;
+  font-size: 14px;
+  padding: 15px;
+  display: inline-block;
+}
+.search a{
+  color: #000;
+  font-size: 14px;
+  display: inline-block;
+}
+.singleSlider{
+  min-height: 500px;
+  display: table;
+  width: 100%;
+  background-size: cover;
+  background-position:center;
+}
+.sliderInner{
+  display: table-cell;
+  vertical-align: middle;
+}
+.sliderText{
+  width: 600px;
+  padding: 100px;
+}
+.sliderText p{
+  color: #0090BA;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.sliderText h2{
+  font-weight: 500;
+  font-size: 40px;
+}
+.sliderBtn{
+  background: #005997;
+  background: -moz-linear-gradient(left, #005997 0%, #0096be 100%);
+  background: -webkit-linear-gradient(left, #005997 0%,#0096be 100%);
+  background: linear-gradient(to right, #005997 0%,#0096be 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005997', endColorstr='#0096be',GradientType=1 );
+  padding: 18px 34px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.homepageSlider .owl-nav div {
+  color: #fff;
+  display: inline-block;
+  margin-right:  30px;
+  margin-top: 20px;
+  opacity: .5;
+}
+.sliderBg3 {
+  position:  relative;
+  z-index: 1;
+}
+
+.sliderBg3::before {
+  position:  absolute;
+  z-index:  -1;
+  content:  '';
+  background:  #fff;
+  height:  100%;
+  width: 100%;
+  opacity: .5;
+}
